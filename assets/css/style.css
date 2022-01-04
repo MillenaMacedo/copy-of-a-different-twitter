@@ -1,0 +1,105 @@
+/*
+Estrutura:
+    seletor {
+        propriedade: valor;
+    }
+
+CSS BEM (bloco elemento modificador)
+Padrão de estruturação por classe
+*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.cabeçalho{
+    flex-basis: 30%;
+}
+.cabeçalho__logo{
+    margin-bottom: 50px;
+}
+.cabeçalho__logo figcaption {
+    display: none;
+}
+
+
+.cabeçalho__menuItem{
+    margin-bottom: 25px;
+}
+.cabeçalho__menuItem img{
+    max-width: 26px;
+}
+.cabeçalho__menuItem a{
+    color: #000;
+    text-decoration: none;
+    font-size: 22px;
+    vertical-align: top;
+}
+
+/*Conteúdo principal*/
+.conteudoPrincipal{
+    flex-basis: 70%;
+    border-left: 1px solid #e7ecf0;
+    border-right: 1px solid #e7ecf0;
+}
+.conteudoPrincipal__título{
+    padding: 10px 30px;
+}
+
+.conteudoPrincipal__forms {
+    padding: 10px 30px;
+    border-top: 1px solid #e7ecf0;
+    border-bottom: 10px solid #e7ecf0;
+    text-align: right;
+}
+.conteudoPrincipal__forms textarea{
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    height: 55px;
+}
+.conteudoPrincipal__forms button{
+    background-color: #1da1f2;
+    border: none;
+    padding: 8px 20px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+
+.conteudoPrincipal__listaTweets{
+    display: flex;
+    flex-flow: column-reverse nowrap;
+}
+.conteudoPrincipal__tweet {
+    padding: 20px 32px;
+    display: flex;
+    align-items: flex-start;
+    border-bottom:1px solid #e7ecf0;
+}
+
+/*tweet*/
+
+.tweet__conteúdo {
+    margin-left: 15px;
+}
+.tweet__conteúdo h2{
+    display: inline-block;
+}
+.tweet__conteúdo span{
+    display: inline-block;
+    color: #828282;
+}
+.tweet__conteúdo p{
+    margin-top: 12px;
+    color: #333333;
+}

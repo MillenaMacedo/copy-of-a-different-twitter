@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<HTML lang="pt-br">
+<!--Configurações-->
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./assets/css/reset.css">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Reclameaqui</title>        
+    </head>
+
+<!--Corpo-->
+    <body>
+        <div class="container">
+
+        <!--Cabeçalho-->
+        <header class="cabeçalho">
+            
+            <!--Imagem logo-->
+            <figure class="cabeçalho__logo">
+                <img src="./assets/img/bird 1.svg" alt="Passarinho azul">
+                <figcaption hidden>Logo Reclameaqui</figcaption>
+            </figure>
+
+            <!--Menu de Navegação-->
+            <nav class="cabeçalho__menuNavegação">
+                <!--Lista de links-->
+                <ul class="cabeçalho__menuLista">
+                    <li class="cabeçalho__menuItem"> <img src="./assets/img/Home.png" alt="casinha"> <a href="">Página Inicial</a></li>
+                    <li class="cabeçalho__menuItem"> <img src="./assets/img/Hashtag.png" alt="hashtag"> <a href="">Explorar</a></li>
+                    <li class="cabeçalho__menuItem"> <img src="./assets/img/Notification.png" alt="sininho"> <a href="">Notificações</a></li>
+                    <li class="cabeçalho__menuItem"> <img src="./assets/img/Group.png" alt="cartinha"> <a href="">Mensagens</a></li>
+                    <li class="cabeçalho__menuItem"> <img src="./assets/img/Group (1).png" alt="bandeirinha"> <a href="">Itens salvos</a></li>
+                    <li class="cabeçalho__menuItem"> <img src="./assets/img/Group (2).png" alt="lista"> <a href="">Listas</a></li>
+                    <li class="cabeçalho__menuItem"> <img src="./assets/img/ProfilePic (1).png" alt="foto"> <a href="">Perfil</a></li>
+                    <li class="cabeçalho__menuItem"> <img src="./assets/img/Group (3).png" alt="reticências"><a href="">Mais</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <!--Conteúdo principal-->
+        <main class="conteudoPrincipal">
+
+            <h3 class="conteudoPrincipal__título">Home</h3>
+
+            <form action="#" class="conteudoPrincipal__forms">
+                <textarea name="textoTweet" placeholder="Reclame da sua vida aqui."></textarea>
+                <button type="submit">Reclamar</button>
+            </form>
+            
+            <!--Feed de reclamações-->
+            <section class="conteudoPrincipal__feed">
+                <ul class="conteudoPrincipal__listaTweets">
+                    <li class="conteudoPrincipal__tweet"> 
+                        <img class="tweet__fotoPerfil" src="./assets/img/ProfilePic.png" alt="Daniel">
+                        <div class="tweet__conteúdo">
+                            <h2>Daniel</h2>
+                            <span>@danielzeta 14s</span>
+                            <p>Minha nossa tá tão quente hoje que facilmente eu poderia economizar meu blush ficando 5segundo no Sol pqp</p>
+                        </div>
+                    </li>
+                    <li class="conteudoPrincipal__tweet">
+                        <img class="tweet__fotoPerfil" src="./assets/img/ProfilePic (1).png" alt="Julia">
+                        <div class="tweet__conteúdo">
+                            <h2>Julia</h2>
+                            <span>@chatinha+bnt 1h</span>
+                            <p>Eu não uso twitter há tanto tempo que tive que programar o meu próprio twitter pra poder reclamar da vida, que decadência senhor</p>
+                        </div>
+                    </li>
+                    <li class="conteudoPrincipal__tweet">
+                        <img class="tweet__fotoPerfil" src="./assets/img/ProfilePic (2).png" alt="Gabriel">
+                        <div class="tweet__conteúdo">
+                            <h2>Gabri</h2>
+                            <span>@grabroel00 10min</span>
+                            <p>tô ansioso demais pra ver o filme do miranha, se for ruim eu juro que processo a Marvel e me torno DC fã</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+        </main>
+     </div>
+     <script type="text/javascript" src="./assets/js/script.js"> </script>
+    </body>
+</HTML>
+
